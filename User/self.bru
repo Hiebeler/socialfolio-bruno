@@ -1,0 +1,15 @@
+meta {
+  name: self
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/api/user/self
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY3YWJjOWU5MTZiMzE4Yjg1NmU2MmI1ZSIsImVtYWlsIjoiZW1hbnVlbC5oaWViZWxlckBnbWFpbC5jb20iLCJ1c2VybmFtZSI6ImhpZWJlbGVyMDUiLCJpYXQiOjE3MzkzMTU4ODIsImV4cCI6MTczOTMxOTQ4Mn0.j5g0Ub_AImCIrxLq40J1YUgzOgCIzcJp_l-8efTxDjA
+}
