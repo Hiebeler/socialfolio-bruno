@@ -1,0 +1,17 @@
+meta {
+  name: updateDescription
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/api/user/update/username/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "description": "hallo test description"
+  }
+}

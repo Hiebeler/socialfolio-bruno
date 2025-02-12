@@ -1,0 +1,17 @@
+meta {
+  name: updateDisplayname
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/api/user/update/displayname/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "displayname": "Emanuel"
+  }
+}
