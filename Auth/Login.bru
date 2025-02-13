@@ -16,3 +16,8 @@ body:json {
     "password": "123456"
   }
 }
+
+script:post-response {
+  let data = res.getBody();
+  bru.setEnvVar("jwt",data.jwt);
+}
