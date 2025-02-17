@@ -1,7 +1,7 @@
 meta {
-  name: create Widget
+  name: create Widget Timezone
   type: http
-  seq: 2
+  seq: 3
 }
 
 post {
@@ -12,14 +12,14 @@ post {
 
 body:json {
   {
-    "type": "github",
-    "variant": 0,
+    "type": "localDate",
+    "variant": 1,
     "size": {
       "cols": 2,
-      "rows": 2
+      "rows": 1
     },
     "data": {
-      "username": "Hiebeler"
+      "timezone": "Europe/Vienna"
     }
   }
 }

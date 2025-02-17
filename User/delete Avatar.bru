@@ -1,0 +1,15 @@
+meta {
+  name: delete Avatar
+  type: http
+  seq: 7
+}
+
+delete {
+  url: {{baseUrl}}/api/user/avatar
+  body: none
+  auth: inherit
+}
+
+body:multipart-form {
+  avatar: @file(/home/emanuel/Pictures/backgrounds/wallpaperflare.com_wallpaper.jpg)
+}

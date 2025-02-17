@@ -1,0 +1,15 @@
+meta {
+  name: mastodon speed test
+  type: http
+  seq: 1
+}
+
+get {
+  url: mastodon.social/api/v1/accounts/lookup?acct=pixelix
+  body: none
+  auth: none
+}
+
+params:query {
+  acct: pixelix
+}

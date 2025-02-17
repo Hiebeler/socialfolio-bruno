@@ -1,0 +1,15 @@
+meta {
+  name: upload Avatar
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{baseUrl}}/api/user/uploadAvatar
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  avatar: @file(/home/emanuel/Pictures/backgrounds/wallpaperflare.com_wallpaper.jpg)
+}

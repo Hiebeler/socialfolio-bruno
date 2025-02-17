@@ -1,0 +1,17 @@
+meta {
+  name: Update Priority
+  type: http
+  seq: 6
+}
+
+put {
+  url: {{baseUrl}}/api/widgets/priority/67ae66c823e6b93475ce613a
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "priority": 2
+  }
+}

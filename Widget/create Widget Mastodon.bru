@@ -1,0 +1,26 @@
+meta {
+  name: create Widget Mastodon
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/api/widgets/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "type": "mastodon",
+    "variant": 2,
+    "size": {
+      "cols": 2,
+      "rows": 2
+    },
+    "data": {
+      "instance": "techhub.social",
+      "username": "hiebeler05"
+    }
+  }
+}
